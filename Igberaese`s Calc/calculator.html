@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+ 
+<div name="container">
+<form name="calc">
+   <table> 
+      <tr> 
+      	<input type="text" id="numberbox" name="number" output= "calc.number.value"  disabled>
+        <td><input type="button" class= "digits" name="nine" value="9" onclick= "document.calc.number.value += '9'"></td>
+        <td><input type= "button" class= "digits" name="eight" value="8" onclick= "document.calc.number.value += '8'"></td>
+        <td><input type= "button"class= "digits" name="7" value="7" onclick= "document.calc.number.value += '7'"></td>
+        <td><input type= "button" class="operators" value="+" onclick= "document.calc.number.value += '+'"></td>
+     </tr>
+
+      <tr> 
+        <td><input type= "button" class= "digits" name="six" value="6" onclick= "document.calc.number.value += '6'"></td>
+        <td><input type= "button" class= "digits" name="five" value="5" onclick= "document.calc.number.value += '5'"></td>
+        <td><input type= "button" class= "digits" name="four" value="4" onclick= "document.calc.number.value += '4'"></td>
+        <td><input type= "button" class="operators" value="x" onclick= "document.calc.number.value += '*'"></td>
+      </tr>
+      
+      <tr> 
+        <td><input type= "button" class= "digits" name="three" value="3" onclick= "document.calc.number.value += '3'"></td>
+        <td><input type= "button" class= "digits" name="two" value="2" onclick= "document.calc.number.value += '2'"></td>
+        <td><input type= "button" class= "digits" name="one" value="1" onclick= "document.calc.number.value += '1'"></td>
+        <td><input type= "button" class="operators" value="-" onclick= "document.calc.number.value += '-'"></td>
+      </tr>
+      <tr> 
+        <td><input type= "button"  class= "digits" value="." onclick= "document.calc.number.value += '.'"></td>
+        <td><input type= "button"  class= "digits" value="0" onclick= "document.calc.number.value += '0'"></td>
+        <td><input type="button" class="digits" value="C" onclick= "document.calc.number.value = ''"></td>
+        <td><input type= "button" class="operators" value="/" onclick= "document.calc.number.value += '/'"></td>
+      </tr>
+   </table>
+   <input type="button" class="sum" value="=" onclick= "document.calc.number.value = eval(document.calc.numberbox.value)">
+</form>   
+</div>
+</body>
+
+</html>
